@@ -57,6 +57,11 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
+App.get('/', (req, res) => {
+  res.json({ message: 'Backend is running!' });
+});
+
+
 function App() {
   const classes = useStyles();
 
